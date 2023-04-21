@@ -18,17 +18,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PGa-ug-4PN">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gPP-Zb-5r1">
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
-                            </imageView>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXT-Yb-X0N" userLabel="ClassLabel" customClass="UILabelPadded" customModule="CheFiore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svz-q5-J2A" userLabel="ConfidenceLabel" customClass="UILabelPadded" customModule="CheFiore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="20.333333333333329" width="393" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PGa-ug-4PN">
+                                        <rect key="frame" x="0.0" y="40.666666666666686" width="393" height="708.33333333333326"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PGa-ug-4PN" secondAttribute="bottom" id="4kv-8p-Uha"/>
+                                    <constraint firstAttribute="trailing" secondItem="PGa-ug-4PN" secondAttribute="trailing" id="IZ3-C4-kXr"/>
+                                    <constraint firstItem="PGa-ug-4PN" firstAttribute="leading" secondItem="gPP-Zb-5r1" secondAttribute="leading" id="Rx6-1H-IjC"/>
+                                    <constraint firstItem="PGa-ug-4PN" firstAttribute="top" secondItem="svz-q5-J2A" secondAttribute="bottom" id="Wga-qL-Bgf"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="PGa-ug-4PN" secondAttribute="bottom" id="JPE-t7-eob"/>
-                            <constraint firstItem="PGa-ug-4PN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WgZ-gj-z1A"/>
-                            <constraint firstItem="PGa-ug-4PN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZXx-R7-lTb"/>
-                            <constraint firstItem="PGa-ug-4PN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uab-7a-wgh"/>
+                            <constraint firstItem="gPP-Zb-5r1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ALt-im-p2t"/>
+                            <constraint firstAttribute="bottom" secondItem="gPP-Zb-5r1" secondAttribute="bottom" id="Fpw-Gz-o7B"/>
+                            <constraint firstItem="gPP-Zb-5r1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bqW-U4-ziq"/>
+                            <constraint firstItem="gPP-Zb-5r1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jbU-ms-hDi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CheFiore" id="f8s-R6-he1">
@@ -40,6 +91,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="classLabel" destination="eXT-Yb-X0N" id="bPc-d3-XcP"/>
+                        <outlet property="confidenceLabel" destination="svz-q5-J2A" id="1ex-hR-5tN"/>
                         <outlet property="imageView" destination="PGa-ug-4PN" id="3TE-tS-miN"/>
                     </connections>
                 </viewController>
