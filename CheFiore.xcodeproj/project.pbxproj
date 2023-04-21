@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B2C62C229F30E3D00B8503D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C62C129F30E3D00B8503D /* .gitignore */; };
 		0B2C62C829F30E7E00B8503D /* flower-labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C62C429F30E7E00B8503D /* flower-labels.txt */; };
-		0B2C62C929F30E7E00B8503D /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C62C529F30E7E00B8503D /* FlowerClassifier.mlmodel */; };
 		0B2C62CA29F30E7E00B8503D /* deploy.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C62C629F30E7E00B8503D /* deploy.prototxt */; };
-		0B2C62CB29F30E7E00B8503D /* oxford102.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C62C729F30E7E00B8503D /* oxford102.caffemodel */; };
 		0B2C62CD29F30E8D00B8503D /* convert_model.py in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C62CC29F30E8D00B8503D /* convert_model.py */; };
 		0B8116CC29F311E900B02056 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B8116CB29F311E900B02056 /* README.md */; };
 		0B84B3AC29EF45D000EF0FA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84B3AB29EF45D000EF0FA9 /* AppDelegate.swift */; };
@@ -20,14 +18,14 @@
 		0B84B3B329EF45D000EF0FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B84B3B129EF45D000EF0FA9 /* Main.storyboard */; };
 		0B84B3B529EF45D200EF0FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B84B3B429EF45D200EF0FA9 /* Assets.xcassets */; };
 		0B84B3B829EF45D200EF0FA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B84B3B629EF45D200EF0FA9 /* LaunchScreen.storyboard */; };
+		0BFA4F1029F315420022FA43 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA4F0E29F315420022FA43 /* FlowerClassifier.mlmodel */; };
+		0BFA4F1129F315420022FA43 /* oxford102.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 0BFA4F0F29F315420022FA43 /* oxford102.caffemodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B2C62C129F30E3D00B8503D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0B2C62C429F30E7E00B8503D /* flower-labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "flower-labels.txt"; sourceTree = "<group>"; };
-		0B2C62C529F30E7E00B8503D /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
 		0B2C62C629F30E7E00B8503D /* deploy.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deploy.prototxt; sourceTree = "<group>"; };
-		0B2C62C729F30E7E00B8503D /* oxford102.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = oxford102.caffemodel; sourceTree = "<group>"; };
 		0B2C62CC29F30E8D00B8503D /* convert_model.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = convert_model.py; sourceTree = "<group>"; };
 		0B8116CB29F311E900B02056 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B84B3A829EF45D000EF0FA9 /* CheFiore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheFiore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +36,8 @@
 		0B84B3B429EF45D200EF0FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B84B3B729EF45D200EF0FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B84B3B929EF45D200EF0FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BFA4F0E29F315420022FA43 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
+		0BFA4F0F29F315420022FA43 /* oxford102.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = oxford102.caffemodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 				0B2C62CC29F30E8D00B8503D /* convert_model.py */,
 				0B2C62C629F30E7E00B8503D /* deploy.prototxt */,
 				0B2C62C429F30E7E00B8503D /* flower-labels.txt */,
-				0B2C62C529F30E7E00B8503D /* FlowerClassifier.mlmodel */,
-				0B2C62C729F30E7E00B8503D /* oxford102.caffemodel */,
+				0BFA4F0E29F315420022FA43 /* FlowerClassifier.mlmodel */,
+				0BFA4F0F29F315420022FA43 /* oxford102.caffemodel */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -84,16 +84,40 @@
 		0B84B3AA29EF45D000EF0FA9 /* CheFiore */ = {
 			isa = PBXGroup;
 			children = (
+				0BFA4F1229F315A90022FA43 /* Model */,
+				0BFA4F1429F315BF0022FA43 /* View */,
+				0BFA4F1329F315B00022FA43 /* Controller */,
 				0B2C62C329F30E7300B8503D /* utils */,
 				0B84B3AB29EF45D000EF0FA9 /* AppDelegate.swift */,
 				0B84B3AD29EF45D000EF0FA9 /* SceneDelegate.swift */,
-				0B84B3AF29EF45D000EF0FA9 /* ViewController.swift */,
-				0B84B3B129EF45D000EF0FA9 /* Main.storyboard */,
 				0B84B3B429EF45D200EF0FA9 /* Assets.xcassets */,
-				0B84B3B629EF45D200EF0FA9 /* LaunchScreen.storyboard */,
 				0B84B3B929EF45D200EF0FA9 /* Info.plist */,
 			);
 			path = CheFiore;
+			sourceTree = "<group>";
+		};
+		0BFA4F1229F315A90022FA43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BFA4F1329F315B00022FA43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B84B3AF29EF45D000EF0FA9 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0BFA4F1429F315BF0022FA43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B84B3B129EF45D000EF0FA9 /* Main.storyboard */,
+				0B84B3B629EF45D200EF0FA9 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +180,8 @@
 			files = (
 				0B2C62CD29F30E8D00B8503D /* convert_model.py in Resources */,
 				0B2C62C229F30E3D00B8503D /* .gitignore in Resources */,
+				0BFA4F1129F315420022FA43 /* oxford102.caffemodel in Resources */,
 				0B84B3B829EF45D200EF0FA9 /* LaunchScreen.storyboard in Resources */,
-				0B2C62CB29F30E7E00B8503D /* oxford102.caffemodel in Resources */,
 				0B2C62CA29F30E7E00B8503D /* deploy.prototxt in Resources */,
 				0B84B3B529EF45D200EF0FA9 /* Assets.xcassets in Resources */,
 				0B8116CC29F311E900B02056 /* README.md in Resources */,
@@ -173,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B2C62C929F30E7E00B8503D /* FlowerClassifier.mlmodel in Sources */,
+				0BFA4F1029F315420022FA43 /* FlowerClassifier.mlmodel in Sources */,
 				0B84B3B029EF45D000EF0FA9 /* ViewController.swift in Sources */,
 				0B84B3AC29EF45D000EF0FA9 /* AppDelegate.swift in Sources */,
 				0B84B3AE29EF45D000EF0FA9 /* SceneDelegate.swift in Sources */,
