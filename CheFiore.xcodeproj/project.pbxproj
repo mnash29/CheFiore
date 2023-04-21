@@ -20,6 +20,7 @@
 		0B84B3B829EF45D200EF0FA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B84B3B629EF45D200EF0FA9 /* LaunchScreen.storyboard */; };
 		0BFA4F1029F315420022FA43 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA4F0E29F315420022FA43 /* FlowerClassifier.mlmodel */; };
 		0BFA4F1129F315420022FA43 /* oxford102.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 0BFA4F0F29F315420022FA43 /* oxford102.caffemodel */; };
+		0BFA4F1629F316660022FA43 /* UILabelPadded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA4F1529F316660022FA43 /* UILabelPadded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0B84B3B929EF45D200EF0FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BFA4F0E29F315420022FA43 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
 		0BFA4F0F29F315420022FA43 /* oxford102.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = oxford102.caffemodel; sourceTree = "<group>"; };
+		0BFA4F1529F316660022FA43 /* UILabelPadded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelPadded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		0BFA4F1229F315A90022FA43 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0BFA4F1529F316660022FA43 /* UILabelPadded.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BFA4F1029F315420022FA43 /* FlowerClassifier.mlmodel in Sources */,
+				0BFA4F1629F316660022FA43 /* UILabelPadded.swift in Sources */,
 				0B84B3B029EF45D000EF0FA9 /* ViewController.swift in Sources */,
 				0B84B3AC29EF45D000EF0FA9 /* AppDelegate.swift in Sources */,
 				0B84B3AE29EF45D000EF0FA9 /* SceneDelegate.swift in Sources */,
