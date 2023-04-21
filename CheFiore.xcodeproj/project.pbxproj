@@ -24,6 +24,7 @@
 		0B84B3B429EF45D200EF0FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B84B3B729EF45D200EF0FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B84B3B929EF45D200EF0FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BBAD00629F30A6000221DCB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		0B84B3AA29EF45D000EF0FA9 /* CheFiore */ = {
 			isa = PBXGroup;
 			children = (
+				0B84B3BF29EF462000EF0FA9 /* utils */,
 				0B84B3AB29EF45D000EF0FA9 /* AppDelegate.swift */,
 				0B84B3AD29EF45D000EF0FA9 /* SceneDelegate.swift */,
 				0B84B3AF29EF45D000EF0FA9 /* ViewController.swift */,
@@ -63,8 +65,16 @@
 				0B84B3B429EF45D200EF0FA9 /* Assets.xcassets */,
 				0B84B3B629EF45D200EF0FA9 /* LaunchScreen.storyboard */,
 				0B84B3B929EF45D200EF0FA9 /* Info.plist */,
+				0BBAD00629F30A6000221DCB /* README.md */,
 			);
 			path = CheFiore;
+			sourceTree = "<group>";
+		};
+		0B84B3BF29EF462000EF0FA9 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
