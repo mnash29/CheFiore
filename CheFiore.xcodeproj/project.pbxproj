@@ -21,6 +21,7 @@
 		0BFA4F1029F315420022FA43 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA4F0E29F315420022FA43 /* FlowerClassifier.mlmodel */; };
 		0BFA4F1129F315420022FA43 /* oxford102.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 0BFA4F0F29F315420022FA43 /* oxford102.caffemodel */; };
 		0BFA4F1629F316660022FA43 /* UILabelPadded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA4F1529F316660022FA43 /* UILabelPadded.swift */; };
+		0BFA4F1829F31C470022FA43 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA4F1729F31C470022FA43 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		0BFA4F0E29F315420022FA43 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
 		0BFA4F0F29F315420022FA43 /* oxford102.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = oxford102.caffemodel; sourceTree = "<group>"; };
 		0BFA4F1529F316660022FA43 /* UILabelPadded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelPadded.swift; sourceTree = "<group>"; };
+		0BFA4F1729F31C470022FA43 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				0B84B3AD29EF45D000EF0FA9 /* SceneDelegate.swift */,
 				0B84B3B429EF45D200EF0FA9 /* Assets.xcassets */,
 				0B84B3B929EF45D200EF0FA9 /* Info.plist */,
+				0BFA4F1729F31C470022FA43 /* Constants.swift */,
 			);
 			path = CheFiore;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				0B84B3B029EF45D000EF0FA9 /* ViewController.swift in Sources */,
 				0B84B3AC29EF45D000EF0FA9 /* AppDelegate.swift in Sources */,
 				0B84B3AE29EF45D000EF0FA9 /* SceneDelegate.swift in Sources */,
+				0BFA4F1829F31C470022FA43 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +363,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,6 +392,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
