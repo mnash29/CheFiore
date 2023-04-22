@@ -11,6 +11,7 @@
 		0B2C62C829F30E7E00B8503D /* flower-labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C62C429F30E7E00B8503D /* flower-labels.txt */; };
 		0B2C62CA29F30E7E00B8503D /* deploy.prototxt in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C62C629F30E7E00B8503D /* deploy.prototxt */; };
 		0B2C62CD29F30E8D00B8503D /* convert_model.py in Resources */ = {isa = PBXBuildFile; fileRef = 0B2C62CC29F30E8D00B8503D /* convert_model.py */; };
+		0B72DB4729F3541200FEB45A /* WikiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B72DB4629F3541200FEB45A /* WikiResponse.swift */; };
 		0B8116CC29F311E900B02056 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B8116CB29F311E900B02056 /* README.md */; };
 		0B84B3AC29EF45D000EF0FA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84B3AB29EF45D000EF0FA9 /* AppDelegate.swift */; };
 		0B84B3AE29EF45D000EF0FA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84B3AD29EF45D000EF0FA9 /* SceneDelegate.swift */; };
@@ -22,6 +23,8 @@
 		0BFA4F1129F315420022FA43 /* oxford102.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 0BFA4F0F29F315420022FA43 /* oxford102.caffemodel */; };
 		0BFA4F1629F316660022FA43 /* UILabelPadded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA4F1529F316660022FA43 /* UILabelPadded.swift */; };
 		0BFA4F1829F31C470022FA43 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA4F1729F31C470022FA43 /* Constants.swift */; };
+		0BFA4F1B29F3474E0022FA43 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0BFA4F1A29F3474E0022FA43 /* Alamofire */; };
+		0BFA4F1E29F3476E0022FA43 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0BFA4F1D29F3476E0022FA43 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,7 @@
 		0B2C62C429F30E7E00B8503D /* flower-labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "flower-labels.txt"; sourceTree = "<group>"; };
 		0B2C62C629F30E7E00B8503D /* deploy.prototxt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deploy.prototxt; sourceTree = "<group>"; };
 		0B2C62CC29F30E8D00B8503D /* convert_model.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = convert_model.py; sourceTree = "<group>"; };
+		0B72DB4629F3541200FEB45A /* WikiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiResponse.swift; sourceTree = "<group>"; };
 		0B8116CB29F311E900B02056 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B84B3A829EF45D000EF0FA9 /* CheFiore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheFiore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B84B3AB29EF45D000EF0FA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFA4F1E29F3476E0022FA43 /* SwiftyJSON in Frameworks */,
+				0BFA4F1B29F3474E0022FA43 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				0BFA4F1529F316660022FA43 /* UILabelPadded.swift */,
+				0B72DB4629F3541200FEB45A /* WikiResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +149,10 @@
 			dependencies = (
 			);
 			name = CheFiore;
+			packageProductDependencies = (
+				0BFA4F1A29F3474E0022FA43 /* Alamofire */,
+				0BFA4F1D29F3476E0022FA43 /* SwiftyJSON */,
+			);
 			productName = CheFiore;
 			productReference = 0B84B3A829EF45D000EF0FA9 /* CheFiore.app */;
 			productType = "com.apple.product-type.application";
@@ -170,6 +181,10 @@
 				Base,
 			);
 			mainGroup = 0B84B39F29EF45D000EF0FA9;
+			packageReferences = (
+				0BFA4F1929F3474E0022FA43 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0BFA4F1C29F3476E0022FA43 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 0B84B3A929EF45D000EF0FA9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,6 +224,7 @@
 				0B84B3AC29EF45D000EF0FA9 /* AppDelegate.swift in Sources */,
 				0B84B3AE29EF45D000EF0FA9 /* SceneDelegate.swift in Sources */,
 				0BFA4F1829F31C470022FA43 /* Constants.swift in Sources */,
+				0B72DB4729F3541200FEB45A /* WikiResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +444,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0BFA4F1929F3474E0022FA43 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		0BFA4F1C29F3476E0022FA43 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0BFA4F1A29F3474E0022FA43 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BFA4F1929F3474E0022FA43 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0BFA4F1D29F3476E0022FA43 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BFA4F1C29F3476E0022FA43 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B84B3A029EF45D000EF0FA9 /* Project object */;
 }

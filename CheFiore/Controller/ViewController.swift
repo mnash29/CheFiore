@@ -8,6 +8,7 @@
 import UIKit
 import CoreML
 import Vision
+import Alamofire
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -16,6 +17,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var confidenceLabel: UILabelPadded!
 
     let imagePicker = UIImagePickerController()
+    let wikipediaUrl = "https://en.wikipedia.org/w/api.php"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +71,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
             self.classLabel.text = "Label: \(prediction.identifier.capitalized)"
             self.confidenceLabel.text = String(format: "Score: %.0f%%", prediction.confidence * 100)
+
+            self.getDescription(with: prediction.identifier)
         }
 
         let handler = VNImageRequestHandler(ciImage: image)
@@ -77,6 +81,37 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             try handler.perform([request])
         } catch {
             print(error)
+        }
+    }
+
+    func getDescription(with identifier: String) {
+        let parameters: [String:String] = [
+            "format": "json",
+            "action": "query",
+            "prop": "extracts",
+            "exintro": "",
+            "explaintext": "",
+            "titles": identifier,
+            "indexpageids": "",
+            "redirects": "1",
+        ]
+
+//        AF.request(wikipediaUrl, method: .get, parameters: parameters).responseDecodable(of: WikiResponse.self) { response in
+//            switch response.result {
+//            case .success(let json):
+//                print(json)
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+
+        AF.request(wikipediaUrl, method: .get, parameters: parameters).responseJSON { (response) in
+            switch response.result {
+            case .success(let json):
+                print(json)
+            case .failure(let error):
+                print(error)
+            }
         }
     }
 
