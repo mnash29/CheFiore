@@ -19,12 +19,12 @@
 		0B84B3B329EF45D000EF0FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B84B3B129EF45D000EF0FA9 /* Main.storyboard */; };
 		0B84B3B529EF45D200EF0FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B84B3B429EF45D200EF0FA9 /* Assets.xcassets */; };
 		0B84B3B829EF45D200EF0FA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B84B3B629EF45D200EF0FA9 /* LaunchScreen.storyboard */; };
-		0BFA4F1029F315420022FA43 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA4F0E29F315420022FA43 /* FlowerClassifier.mlmodel */; };
+		0BCCC1B129FC4D8D00531D26 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0BCCC1B029FC4D8D00531D26 /* FlowerClassifier.mlmodel */; };
+		0BD176C929FC545100255D5D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0BD176C829FC545100255D5D /* SDWebImage */; };
 		0BFA4F1129F315420022FA43 /* oxford102.caffemodel in Resources */ = {isa = PBXBuildFile; fileRef = 0BFA4F0F29F315420022FA43 /* oxford102.caffemodel */; };
 		0BFA4F1629F316660022FA43 /* UILabelPadded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA4F1529F316660022FA43 /* UILabelPadded.swift */; };
 		0BFA4F1829F31C470022FA43 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA4F1729F31C470022FA43 /* Constants.swift */; };
 		0BFA4F1B29F3474E0022FA43 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0BFA4F1A29F3474E0022FA43 /* Alamofire */; };
-		0BFA4F1E29F3476E0022FA43 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0BFA4F1D29F3476E0022FA43 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +42,7 @@
 		0B84B3B429EF45D200EF0FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B84B3B729EF45D200EF0FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B84B3B929EF45D200EF0FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BFA4F0E29F315420022FA43 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
+		0BCCC1B029FC4D8D00531D26 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FlowerClassifier.mlmodel; path = "../../../../MachineLearning/flower-classifier/FlowerClassifier.mlmodel"; sourceTree = "<group>"; };
 		0BFA4F0F29F315420022FA43 /* oxford102.caffemodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = oxford102.caffemodel; sourceTree = "<group>"; };
 		0BFA4F1529F316660022FA43 /* UILabelPadded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelPadded.swift; sourceTree = "<group>"; };
 		0BFA4F1729F31C470022FA43 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BFA4F1E29F3476E0022FA43 /* SwiftyJSON in Frameworks */,
+				0BD176C929FC545100255D5D /* SDWebImage in Frameworks */,
 				0BFA4F1B29F3474E0022FA43 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +67,7 @@
 				0B2C62CC29F30E8D00B8503D /* convert_model.py */,
 				0B2C62C629F30E7E00B8503D /* deploy.prototxt */,
 				0B2C62C429F30E7E00B8503D /* flower-labels.txt */,
-				0BFA4F0E29F315420022FA43 /* FlowerClassifier.mlmodel */,
+				0BCCC1B029FC4D8D00531D26 /* FlowerClassifier.mlmodel */,
 				0BFA4F0F29F315420022FA43 /* oxford102.caffemodel */,
 			);
 			path = utils;
@@ -151,7 +151,7 @@
 			name = CheFiore;
 			packageProductDependencies = (
 				0BFA4F1A29F3474E0022FA43 /* Alamofire */,
-				0BFA4F1D29F3476E0022FA43 /* SwiftyJSON */,
+				0BD176C829FC545100255D5D /* SDWebImage */,
 			);
 			productName = CheFiore;
 			productReference = 0B84B3A829EF45D000EF0FA9 /* CheFiore.app */;
@@ -183,7 +183,7 @@
 			mainGroup = 0B84B39F29EF45D000EF0FA9;
 			packageReferences = (
 				0BFA4F1929F3474E0022FA43 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				0BFA4F1C29F3476E0022FA43 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				0BD176C729FC545100255D5D /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 0B84B3A929EF45D000EF0FA9 /* Products */;
 			projectDirPath = "";
@@ -218,8 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BFA4F1029F315420022FA43 /* FlowerClassifier.mlmodel in Sources */,
 				0BFA4F1629F316660022FA43 /* UILabelPadded.swift in Sources */,
+				0BCCC1B129FC4D8D00531D26 /* FlowerClassifier.mlmodel in Sources */,
 				0B84B3B029EF45D000EF0FA9 /* ViewController.swift in Sources */,
 				0B84B3AC29EF45D000EF0FA9 /* AppDelegate.swift in Sources */,
 				0B84B3AE29EF45D000EF0FA9 /* SceneDelegate.swift in Sources */,
@@ -446,6 +446,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0BD176C729FC545100255D5D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		0BFA4F1929F3474E0022FA43 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -454,26 +462,18 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		0BFA4F1C29F3476E0022FA43 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0BD176C829FC545100255D5D /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BD176C729FC545100255D5D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		0BFA4F1A29F3474E0022FA43 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0BFA4F1929F3474E0022FA43 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		0BFA4F1D29F3476E0022FA43 /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0BFA4F1C29F3476E0022FA43 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

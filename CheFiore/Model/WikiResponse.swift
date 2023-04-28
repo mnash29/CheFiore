@@ -21,6 +21,8 @@ struct Query: Codable {
 
 struct Page: Codable {
     let pageid: Int?
+    let pageimage: String?
+    let thumbnail: Thumbnail?
     let ns: Int?
     let title: String?
     let extract: String?
@@ -30,4 +32,10 @@ struct Page: Codable {
     let touched: String?
     let lastrevid: Int?
     let length: Int?
+}
+
+struct Thumbnail: Codable {
+    let height: Int
+    let width: Int
+    let source: String
 }

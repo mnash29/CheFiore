@@ -9,12 +9,13 @@ import UIKit
 import CoreML
 import Vision
 import Alamofire
+import SDWebImage
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var classLabel: UILabelPadded!
-    @IBOutlet weak var confidenceLabel: UILabelPadded!
+    @IBOutlet weak var descriptionTextLabel: UILabel!
+    @IBOutlet weak var descriptionTitleLabel: UILabel!
 
     let imagePicker = UIImagePickerController()
     let wikipediaUrl = "https://en.wikipedia.org/w/api.php"
@@ -27,9 +28,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.allowsEditing = false
 
         imageView.image = UIImage(named: "camera.fill")
-
-        classLabel.text = ""
-        confidenceLabel.text = ""
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -69,8 +67,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
             guard let prediction = results.first else { return }
 
-            self.classLabel.text = "Label: \(prediction.identifier.capitalized)"
-            self.confidenceLabel.text = String(format: "Score: %.0f%%", prediction.confidence * 100)
+            self.navigationItem.title = prediction.identifier.capitalized
 
             self.getDescription(with: prediction.identifier)
         }
@@ -88,27 +85,28 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let parameters: [String:String] = [
             "format": "json",
             "action": "query",
-            "prop": "extracts",
+            "prop": "extracts|pageimages",
             "exintro": "",
             "explaintext": "",
             "titles": identifier,
             "indexpageids": "",
             "redirects": "1",
+            "pithumbsize": "500"
         ]
 
-//        AF.request(wikipediaUrl, method: .get, parameters: parameters).responseDecodable(of: WikiResponse.self) { response in
-//            switch response.result {
-//            case .success(let json):
-//                print(json)
-//            case .failure(let error):
-//                print(error)
-//            }
-//        }
-
-        AF.request(wikipediaUrl, method: .get, parameters: parameters).responseJSON { (response) in
+        AF.request(wikipediaUrl, method: .get, parameters: parameters).responseDecodable(of: WikiResponse.self) { (response) in
             switch response.result {
-            case .success(let json):
-                print(json)
+            case .success(let afResponseData):
+                guard let pageId = afResponseData.query.pageids?.first else { return }
+
+                if let extractText = afResponseData.query.pages[pageId]?.extract {
+                    self.descriptionTitleLabel.isHidden = false
+                    self.descriptionTextLabel.text = extractText
+                }
+
+                if let pageImage = afResponseData.query.pages[pageId]?.thumbnail {
+                    self.imageView.sd_setImage(with: URL(string: pageImage.source))
+                }
             case .failure(let error):
                 print(error)
             }

@@ -18,68 +18,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gPP-Zb-5r1">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXT-Yb-X0N" userLabel="ClassLabel" customClass="UILabelPadded" customModule="CheFiore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svz-q5-J2A" userLabel="ConfidenceLabel" customClass="UILabelPadded" customModule="CheFiore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="20.333333333333329" width="393" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PGa-ug-4PN">
-                                        <rect key="frame" x="0.0" y="40.666666666666686" width="393" height="708.33333333333326"/>
-                                    </imageView>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PGa-ug-4PN">
+                                <rect key="frame" x="0.0" y="103" width="393" height="427"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="PGa-ug-4PN" secondAttribute="bottom" id="4kv-8p-Uha"/>
-                                    <constraint firstAttribute="trailing" secondItem="PGa-ug-4PN" secondAttribute="trailing" id="IZ3-C4-kXr"/>
-                                    <constraint firstItem="PGa-ug-4PN" firstAttribute="leading" secondItem="gPP-Zb-5r1" secondAttribute="leading" id="Rx6-1H-IjC"/>
-                                    <constraint firstItem="PGa-ug-4PN" firstAttribute="top" secondItem="svz-q5-J2A" secondAttribute="bottom" id="Wga-qL-Bgf"/>
+                                    <constraint firstAttribute="width" secondItem="PGa-ug-4PN" secondAttribute="height" multiplier="393:427" id="FEd-bV-I9v"/>
                                 </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mz1-MB-fWH">
+                                <rect key="frame" x="16" y="546" width="361" height="272"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIk-4s-ai2">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="0Uu-al-NF4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KIA-9I-VzG">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="272"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gPP-Zb-5r1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ALt-im-p2t"/>
-                            <constraint firstAttribute="bottom" secondItem="gPP-Zb-5r1" secondAttribute="bottom" id="Fpw-Gz-o7B"/>
-                            <constraint firstItem="gPP-Zb-5r1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bqW-U4-ziq"/>
-                            <constraint firstItem="gPP-Zb-5r1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jbU-ms-hDi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mz1-MB-fWH" secondAttribute="bottom" id="BWM-xz-geI"/>
+                            <constraint firstItem="PGa-ug-4PN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E9O-oK-hkQ"/>
+                            <constraint firstItem="Mz1-MB-fWH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UI0-F2-8Ep"/>
+                            <constraint firstItem="Mz1-MB-fWH" firstAttribute="top" secondItem="PGa-ug-4PN" secondAttribute="bottom" constant="16" id="bAC-m2-dRb"/>
+                            <constraint firstItem="PGa-ug-4PN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jjB-MV-n3V"/>
+                            <constraint firstItem="PGa-ug-4PN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mvh-uI-NpS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mz1-MB-fWH" secondAttribute="trailing" constant="16" id="yez-Yj-cE3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CheFiore" id="f8s-R6-he1">
@@ -91,8 +66,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="classLabel" destination="eXT-Yb-X0N" id="bPc-d3-XcP"/>
-                        <outlet property="confidenceLabel" destination="svz-q5-J2A" id="1ex-hR-5tN"/>
+                        <outlet property="descriptionTextLabel" destination="KIA-9I-VzG" id="zjC-Ne-tXW"/>
+                        <outlet property="descriptionTitleLabel" destination="IIk-4s-ai2" id="IqQ-YX-fDs"/>
                         <outlet property="imageView" destination="PGa-ug-4PN" id="3TE-tS-miN"/>
                     </connections>
                 </viewController>

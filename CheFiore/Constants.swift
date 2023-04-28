@@ -8,5 +8,5 @@
 import UIKit
 
 struct K {
-    static var navBarTintColor = UIColor.systemGreen
+    static var navBarTintColor = UIColor.purple
 }
